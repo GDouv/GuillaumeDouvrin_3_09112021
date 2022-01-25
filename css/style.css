@@ -53,10 +53,9 @@ h1 {
 .btn {
   display: flex;
   justify-content: center;
-  background-color: violet;
+  background: linear-gradient(to top, #9356dc, #ff79da 100%);
   height: 2.8rem;
   width: 58%;
-  border: solid 1px red;
   border-radius: 3rem;
 }
 .btn p {
@@ -82,7 +81,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(204, 204, 204, 0.5);
+  background-color: rgba(219, 219, 219, 0.5);
   font-weight: bold;
 }
 .box-location i {
@@ -98,6 +97,8 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #f7f7f7;
+  padding-bottom: 3rem;
 }
 .explore a {
   display: flex;
