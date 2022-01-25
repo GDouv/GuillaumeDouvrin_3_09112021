@@ -46,6 +46,24 @@ h1 {
   text-align: center;
 }
 
+.intro {
+  text-align: center;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  background-color: violet;
+  height: 2.8rem;
+  width: 58%;
+  border: solid 1px red;
+  border-radius: 3rem;
+}
+.btn p {
+  font-size: 0.9rem;
+  color: white;
+}
+
 .logo {
   width: 10rem;
   margin: 1.5rem 0 1rem 0;
@@ -71,13 +89,19 @@ h1 {
   margin-right: 20px;
 }
 
-.presentation {
+.section-presentation {
   display: flex;
   flex-direction: column;
 }
 
-.intro {
-  text-align: center;
+.explore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.explore a {
+  display: flex;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
