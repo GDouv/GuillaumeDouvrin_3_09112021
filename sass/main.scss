@@ -1,3 +1,25 @@
 @import "./utils/variables";
 @import "./base/base";
 @import "./base/typography";
+@import "./components/logo.scss";
+@import "./components/butons";
+
+.box-location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(204, 204, 204, 0.5);
+    font-weight: bold;
+    i {
+        margin-right: 20px;
+    }
+}
+
+.presentation {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro {
+    text-align: center;
+}

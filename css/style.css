@@ -18,16 +18,66 @@ body {
   margin: auto;
 }
 
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
 html {
   font-family: Roboto, Arial, sans-serif;
 }
 
 h1 {
   font-family: Shrikhand, Arial, sans-serif;
+  text-align: center;
 }
 
-#index_h1 {
+.title {
   font-family: Roboto, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding: 0.5rem 3.5rem 0 3.5rem;
+}
+.title--center {
+  text-align: center;
+}
+
+.logo {
+  width: 10rem;
+  margin: 1.5rem 0 1rem 0;
+}
+
+.box-logo {
+  box-shadow: #929292 0.1rem 0.1rem 0.5rem;
+}
+
+.box-logo {
+  display: flex;
+  justify-content: center;
+}
+
+.box-location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(204, 204, 204, 0.5);
+  font-weight: bold;
+}
+.box-location i {
+  margin-right: 20px;
+}
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
