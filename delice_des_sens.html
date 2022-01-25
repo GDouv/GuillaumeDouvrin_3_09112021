@@ -4,7 +4,14 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
         <link
             rel="stylesheet"
             href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -18,7 +25,10 @@
         <div id="container">
             <header>
                 <i></i>
-                <p>ohmyfood</p>
+                <img
+                    src="./images/logo/ohmyfood@2x.svg"
+                    alt="Logo du site OhMyFood"
+                />
             </header>
 
             <div>
@@ -28,7 +38,11 @@
             <section>
                 <div>
                     <h1>Le délice des sens</h1>
-                    <i></i>
+
+                    <div class="icon_heart">
+                        <i class="far fa-heart" aria-hidden="true"></i>
+                        <i class="fas fa-heart"></i>
+                    </div>
                 </div>
 
                 <article>
@@ -118,13 +132,24 @@
                 <nav>
                     <ul>
                         <li>
-                            <a href=""><i></i>Proposer un restaurant</a>
+                            <a href="">
+                                <i class="fas fa-utensils"></i>
+                                Proposer un restaurant
+                            </a>
                         </li>
+
                         <li>
-                            <a href=""><i></i>Devenir partenaire</a>
+                            <a href="">
+                                <i class="fas fa-hands-helping"></i>
+                                Devenir partenaire
+                            </a>
                         </li>
+
                         <li><a href="">Mentions légales</a></li>
-                        <li><a href="">Contact</a></li>
+
+                        <li>
+                            <a href="mailto:contact@ohmyfood.com">Contact</a>
+                        </li>
                     </ul>
                 </nav>
             </footer>

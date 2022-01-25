@@ -4,7 +4,14 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
         <link
             rel="stylesheet"
             href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -17,10 +24,13 @@
     <body>
         <div id="container">
             <header>
-                <h1>ohmyfood</h1>
+                <img
+                    src="./images/logo/ohmyfood@2x.svg"
+                    alt="Logo du site OhMyFood"
+                />
 
                 <div>
-                    <i></i>
+                    <i class="fas fa-map-marker-alt"></i>
                     <p>Paris, Belleville</p>
                 </div>
             </header>
@@ -28,7 +38,9 @@
             <main>
                 <section>
                     <article>
-                        <h2>Réservez le menu qui vous convient</h2>
+                        <h1 id="index_h1">
+                            Réservez le menu qui vous convient
+                        </h1>
 
                         <p>
                             Découvrez des restaurants d'exception, séléctionnés
@@ -45,7 +57,7 @@
                         <a href="">
                             <div>
                                 <div>1</div>
-                                <i></i>
+                                <i class="fas fa-mobile-alt"></i>
                                 <p>Choisissez un restaurant</p>
                             </div>
                         </a>
@@ -53,7 +65,7 @@
                         <a href="">
                             <div>
                                 <div>2</div>
-                                <i></i>
+                                <i class="fas fa-list-ul"></i>
                                 <p>Composez votre menu</p>
                             </div>
                         </a>
@@ -61,7 +73,7 @@
                         <a href="">
                             <div>
                                 <div>3</div>
-                                <i></i>
+                                <i class="fas fa-store"></i>
                                 <p>Dégustez au restaurant</p>
                             </div>
                         </a>
@@ -82,7 +94,14 @@
                                 <figcaption>
                                     <h3>La palette du goût</h3>
                                     <span>Ménilmontant</span>
-                                    <i></i>
+
+                                    <div class="icon_heart">
+                                        <i
+                                            class="far fa-heart"
+                                            aria-hidden="true"
+                                        ></i>
+                                        <i class="fas fa-heart"></i>
+                                    </div>
                                 </figcaption>
                             </figure>
                         </a>
@@ -97,7 +116,14 @@
                                 <figcaption>
                                     <h3>La note enchantée</h3>
                                     <span>Charonne</span>
-                                    <i></i>
+
+                                    <div class="icon_heart">
+                                        <i
+                                            class="far fa-heart"
+                                            aria-hidden="true"
+                                        ></i>
+                                        <i class="fas fa-heart"></i>
+                                    </div>
                                 </figcaption>
                             </figure>
                         </a>
@@ -111,7 +137,14 @@
                                 <figcaption>
                                     <h3>À la francaise</h3>
                                     <span>Cité Rouge</span>
-                                    <i></i>
+
+                                    <div class="icon_heart">
+                                        <i
+                                            class="far fa-heart"
+                                            aria-hidden="true"
+                                        ></i>
+                                        <i class="fas fa-heart"></i>
+                                    </div>
                                 </figcaption>
                             </figure>
                         </a>
@@ -125,7 +158,14 @@
                                 <figcaption>
                                     <h3>Le délice des sens</h3>
                                     <span>Folie-Méricourt</span>
-                                    <i></i>
+
+                                    <div class="icon_heart">
+                                        <i
+                                            class="far fa-heart"
+                                            aria-hidden="true"
+                                        ></i>
+                                        <i class="fas fa-heart"></i>
+                                    </div>
                                 </figcaption>
                             </figure>
                         </a>
@@ -139,13 +179,24 @@
                 <nav>
                     <ul>
                         <li>
-                            <a href=""><i></i>Proposer un restaurant</a>
+                            <a href="">
+                                <i class="fas fa-utensils"></i>
+                                Proposer un restaurant
+                            </a>
                         </li>
+
                         <li>
-                            <a href=""><i></i>Devenir partenaire</a>
+                            <a href="">
+                                <i class="fas fa-hands-helping"></i>
+                                Devenir partenaire
+                            </a>
                         </li>
+
                         <li><a href="">Mentions légales</a></li>
-                        <li><a href="">Contact</a></li>
+
+                        <li>
+                            <a href="mailto:contact@ohmyfood.com">Contact</a>
+                        </li>
                     </ul>
                 </nav>
             </footer>
