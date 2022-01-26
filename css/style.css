@@ -57,6 +57,10 @@ h1 {
   justify-content: flex-start;
 }
 
+.index__number {
+  font-weight: normal;
+}
+
 .btn {
   display: flex;
   justify-content: center;
