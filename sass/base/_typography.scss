@@ -23,3 +23,9 @@ h1 {
 .intro {
     text-align: center;
 }
+
+.title--left {
+    display: flex;
+    padding-left: 1rem;
+    justify-content: flex-start;
+}

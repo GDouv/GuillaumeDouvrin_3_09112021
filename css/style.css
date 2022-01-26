@@ -25,6 +25,7 @@ header {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 html {
@@ -50,6 +51,12 @@ h1 {
   text-align: center;
 }
 
+.title--left {
+  display: flex;
+  padding-left: 1rem;
+  justify-content: flex-start;
+}
+
 .btn {
   display: flex;
   justify-content: center;
@@ -61,6 +68,36 @@ h1 {
 .btn p {
   font-size: 0.9rem;
   color: white;
+}
+
+.index {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  border: solid 1px transparent;
+  border-radius: 1rem;
+  background-color: #f7f7f7;
+  box-shadow: 0.1rem 0.1rem 0.6rem #797979;
+  margin: 1rem 1rem 1rem 1.6rem;
+}
+.index__number {
+  display: flex;
+  color: #fff;
+  border-radius: 1rem;
+  background-color: #9356dc;
+  align-items: center;
+  justify-content: center;
+  height: 30%;
+  width: 1.2rem;
+  margin: 0 0 0 1.5rem;
+  position: relative;
+  right: 2rem;
+}
+.index i {
+  color: #777777;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo {
@@ -103,6 +140,12 @@ h1 {
 .explore a {
   display: flex;
   align-items: center;
+}
+
+.box__icon {
+  width: 1rem;
+  position: relative;
+  right: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
