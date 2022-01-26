@@ -64,6 +64,7 @@ h1 {
   height: 2.8rem;
   width: 58%;
   border-radius: 3rem;
+  box-shadow: 0.1rem 0.1rem 0.6rem #797979;
 }
 .btn p {
   font-size: 0.9rem;
@@ -74,7 +75,6 @@ h1 {
   display: flex;
   align-items: center;
   font-weight: bold;
-  border: solid 1px transparent;
   border-radius: 1rem;
   background-color: #f7f7f7;
   box-shadow: 0.1rem 0.1rem 0.6rem #797979;
