@@ -1,7 +1,7 @@
 .box-logo {
     display: flex;
     justify-content: center;
-    box-shadow: rgb(146, 146, 146) 0.1rem 0.1rem 0.5rem;
+    @include box-shadow;
 }
 
 .box-location {
@@ -36,4 +36,26 @@
     width: 1rem;
     position: relative;
     right: 1rem;
+}
+
+.main-section {
+    background-color: $bg-lightgrey;
+}
+
+.resto-pic {
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 148px;
+        object-position: 0 -48px;
+    }
+
+    &--up img {
+        object-position: 0 -130px;
+    }
+}
+
+.card-resto {
+    overflow: hidden;
+    border-radius: 1rem;
 }

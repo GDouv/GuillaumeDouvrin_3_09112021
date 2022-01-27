@@ -4,7 +4,7 @@
     font-weight: bold;
     border-radius: 1rem;
     background-color: rgb(247, 247, 247);
-    box-shadow: 0.1rem 0.1rem 0.6rem rgb(121, 121, 121);
+    @include box-shadow;
     margin: 1rem 1rem 1rem 1.6rem;
 
     &__number {
@@ -22,7 +22,7 @@
     }
 
     i {
-        color: rgb(119, 119, 119);
+        color: rgb(109, 109, 109);
         display: flex;
         justify-content: center;
         align-items: center;
