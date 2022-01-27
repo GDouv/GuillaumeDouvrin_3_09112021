@@ -53,6 +53,11 @@
     &--up img {
         object-position: 0 -130px;
     }
+
+    &-page img {
+        object-position: 0;
+        height: 100%;
+    }
 }
 
 .card-resto {

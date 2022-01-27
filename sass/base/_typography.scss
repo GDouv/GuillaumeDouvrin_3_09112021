@@ -25,6 +25,18 @@ h1 {
         padding-left: 1rem;
         justify-content: flex-start;
     }
+
+    &--uper {
+        text-transform: uppercase;
+    }
+
+    &--normal {
+        font-weight: normal;
+    }
+
+    &--small {
+        font-size: 1rem;
+    }
 }
 
 .intro {
@@ -33,4 +45,10 @@ h1 {
 
 .index__number {
     font-weight: normal;
+}
+
+.page-title {
+    font-size: 1.4rem;
+    text-align: left;
+    margin-left: 1rem;
 }

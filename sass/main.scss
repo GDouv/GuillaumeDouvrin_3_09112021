@@ -7,3 +7,24 @@
 @import "./layouts/header";
 @import "./layouts/boxes";
 @import "./layouts/footer";
+
+.page-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon_heart {
+    &--right1 {
+        margin-right: 1rem;
+    }
+}
+
+.green-line {
+    display: block;
+    width: 35px;
+    height: 3px;
+    border: $color-tertiary solid 1px;
+    background-color: $color-tertiary;
+    margin-left: 1rem;
+}
