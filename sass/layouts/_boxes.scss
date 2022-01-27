@@ -1,10 +1,7 @@
 .box-logo {
-    box-shadow: rgb(146, 146, 146) 0.1rem 0.1rem 0.5rem;
-}
-
-.box-logo {
     display: flex;
     justify-content: center;
+    box-shadow: rgb(146, 146, 146) 0.1rem 0.1rem 0.5rem;
 }
 
 .box-location {
@@ -27,7 +24,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(247, 247, 247);
+    background-color: $bg-lightgrey;
     padding-bottom: 3rem;
     a {
         display: flex;
@@ -39,8 +36,4 @@
     width: 1rem;
     position: relative;
     right: 1rem;
-}
-
-#restaurants {
-    background-color: rgb(247, 247, 247);
 }
