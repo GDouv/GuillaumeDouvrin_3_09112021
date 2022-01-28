@@ -140,6 +140,48 @@ h1 {
 
 .meal-card {
   display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  box-shadow: 0.1rem 0.1rem 0.6rem #797979;
+}
+.meal-card__txt {
+  display: flex;
+  flex-direction: column;
+}
+.meal-card__txt h3 {
+  font-weight: bold;
+  font-size: 1rem;
+  max-width: 240px;
+  padding-right: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.meal-card__txt p {
+  margin: 4px 0 0 0;
+  max-width: 240px;
+  padding-right: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.meal-card__price {
+  font-weight: bold;
+  margin: 0 1rem 0 0;
+}
+.meal-card__check {
+  display: none;
+}
+.meal-card__border {
+  border-radius: 1rem;
+  margin: 12px 1rem;
+  padding: 10px 0 8px 0.5rem;
+}
+.meal-card__border:hover p,
+.meal-card__border:hover h3 {
+  text-overflow: unset;
+  overflow: unset;
+  white-space: unset;
 }
 
 .green-line {
@@ -158,6 +200,23 @@ h1 {
 .logo--center {
   display: flex;
   justify-content: center;
+}
+
+.page__header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.page__header i {
+  font-size: 1.3rem;
+}
+
+.logo--margin-right {
+  margin-right: 3.8rem;
+}
+.logo--margin-top16 {
+  margin-top: 16px;
 }
 
 .box-logo {
@@ -248,7 +307,7 @@ figcaption {
 }
 
 footer {
-  background-color: #383838;
+  background-color: #292929;
   color: white;
 }
 footer a {
@@ -261,6 +320,27 @@ ul {
 }
 ul li {
   margin-bottom: 5px;
+}
+
+.footer--up {
+  position: relative;
+  bottom: 30px;
+}
+
+.menu {
+  border-radius: 2rem;
+  overflow: hidden;
+  position: relative;
+  bottom: 45px;
+  background-color: white;
+  padding-bottom: 15px;
+}
+.menu article {
+  margin-bottom: 40px;
+}
+.menu .btn--center {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */

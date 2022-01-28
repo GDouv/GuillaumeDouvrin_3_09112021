@@ -1,1 +1,22 @@
 @import "../components/logo";
+
+.page__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    i {
+        font-size: 1.3rem;
+    }
+}
+
+.logo {
+    &--margin-right {
+        margin-right: 3.8rem;
+    }
+
+    &--margin-top16 {
+        margin-top: 16px;
+    }
+}

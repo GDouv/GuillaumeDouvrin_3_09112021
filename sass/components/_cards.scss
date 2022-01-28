@@ -31,5 +31,47 @@
 
 .meal-card {
     display: flex;
-    
+    justify-content: space-between;
+    align-items: flex-end;
+    @include box-shadow;
+
+    &__txt {
+        display: flex;
+        flex-direction: column;
+
+        h3 {
+            font-weight: bold;
+            font-size: 1rem;
+            @include meal-card__txt;
+        }
+
+        p {
+            margin: 4px 0 0 0;
+            @include meal-card__txt;
+        }
+    }
+
+    &__price {
+        font-weight: bold;
+        margin: 0 1rem 0 0;
+    }
+
+    &__check {
+        display: none;
+    }
+
+    &__border {
+        border-radius: 1rem;
+        margin: 12px 1rem;
+        padding: 10px 0 8px 0.5rem;
+
+        &:hover {
+            p,
+            h3 {
+                text-overflow: unset;
+                overflow: unset;
+                white-space: unset;
+            }
+        }
+    }
 }

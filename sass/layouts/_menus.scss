@@ -1,0 +1,17 @@
+.menu {
+    border-radius: 2rem;
+    overflow: hidden;
+    position: relative;
+    bottom: 45px;
+    background-color: white;
+    padding-bottom: 15px;
+
+    article {
+        margin-bottom: 40px;
+    }
+
+    .btn--center {
+        display: flex;
+        justify-content: center;
+    }
+}

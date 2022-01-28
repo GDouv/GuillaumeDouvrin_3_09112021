@@ -1,5 +1,5 @@
 footer {
-    background-color: rgb(56, 56, 56);
+    background-color: rgb(41, 41, 41);
     color: white;
 
     a {
@@ -14,4 +14,9 @@ ul {
     li {
         margin-bottom: 5px;
     }
+}
+
+.footer--up {
+    position: relative;
+    bottom: 30px;
 }
