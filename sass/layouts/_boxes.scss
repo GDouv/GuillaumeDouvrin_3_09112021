@@ -78,3 +78,15 @@ figcaption {
     display: flex;
     flex-direction: column;
 }
+
+.icon_heart {
+    &--right1 {
+        margin-right: 1rem;
+    }
+}
+
+.page-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

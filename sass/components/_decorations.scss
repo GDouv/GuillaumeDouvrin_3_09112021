@@ -1,0 +1,8 @@
+.green-line {
+    display: block;
+    width: 35px;
+    height: 3px;
+    border: $color-tertiary solid 1px;
+    background-color: $color-tertiary;
+    margin-left: 1rem;
+}
