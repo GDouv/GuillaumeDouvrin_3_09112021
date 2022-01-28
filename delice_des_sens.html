@@ -23,111 +23,151 @@
 
     <body>
         <div id="container">
-            <header>
-                <i></i>
-                <img
-                    src="./images/logo/ohmyfood@2x.svg"
-                    alt="Logo du site OhMyFood"
-                />
+            <header class="page__header">
+                <div>
+                    <i class="fas fa-arrow-left"></i>
+                </div>
+                <div class="logo--center logo--margin-right">
+                    <img
+                        src="./images/logo/ohmyfood@2x.svg"
+                        alt="Logo du site OhMyFood"
+                        class="logo logo--margin-top16"
+                    />
+                </div>
             </header>
 
-            <div>
-                <img src="" alt="" />
+            <div class="resto-pic resto-pic-page">
+                <img
+                    src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                    alt="Photo"
+                />
             </div>
 
-            <section>
-                <div>
-                    <h1>Le délice des sens</h1>
+            <section class="menu">
+                <div class="page-head">
+                    <h1 class="page-title">À la francaise</h1>
 
-                    <div class="icon_heart">
+                    <div class="icon_heart icon_heart--right1">
                         <i class="far fa-heart" aria-hidden="true"></i>
                         <i class="fas fa-heart"></i>
                     </div>
                 </div>
 
                 <article>
-                    <h2>Entrées</h2>
-                    <span></span>
+                    <h2
+                        class="title title--left title--uper title--normal title--small"
+                    >
+                        Entrées
+                    </h2>
+                    <span class="green-line"></span>
 
-                    <div>
-                        <h3>Tartare de thon</h3>
-                        <p>Assaisonné au yuzu</p>
-                        <p>25€</p>
-                        <div></div>
+                    <div class="meal-card meal-card__border">
+                        <div class="meal-card__txt">
+                            <h3>Tartare de thon</h3>
+                            <p>Assaisonné au yuzu</p>
+                        </div>
+                        <p class="meal-card__price">25€</p>
+                        <div class="meal-card__check"></div>
                     </div>
 
-                    <div>
-                        <h3>Bouchée de homard croustillant</h3>
-                        <p>Et sa farandole de petits légumes</p>
-                        <p>35€</p>
-                        <div></div>
+                    <div class="meal-card meal-card__border">
+                        <div class="meal-card__txt">
+                            <h3>Bouchée de homard croustillant</h3>
+                            <p>Et sa farandole de petits légumes</p>
+                        </div>
+                        <p class="meal-card__price">35€</p>
+                        <div class="meal-card__check"></div>
                     </div>
 
-                    <div>
-                        <h3>Velouté de cèpes</h3>
-                        <p>Aux truffes</p>
-                        <p>20€</p>
-                        <div></div>
-                    </div>
-                </article>
-
-                <article>
-                    <h2>Plats</h2>
-                    <span></span>
-
-                    <div>
-                        <h3>Poulet rôti aux herbes de Provence</h3>
-                        <p>Et sa crème de truffe</p>
-                        <p>40€</p>
-                        <div></div>
-                    </div>
-
-                    <div>
-                        <h3>Langouste rôtie</h3>
-                        <p>Et ses légumes de saison</p>
-                        <p>35€</p>
-                        <div></div>
-                    </div>
-
-                    <div>
-                        <h3>Côte de boeuf Angus</h3>
-                        <p>Et sa purée de panais</p>
-                        <p>44€</p>
-                        <div></div>
+                    <div class="meal-card meal-card__border">
+                        <div class="meal-card__txt">
+                            <h3>Velouté de cèpes</h3>
+                            <p>Aux truffes</p>
+                        </div>
+                        <p class="meal-card__price">20€</p>
+                        <div class="meal-card__check"></div>
                     </div>
                 </article>
 
                 <article>
-                    <h2>Desserts</h2>
-                    <span></span>
+                    <h2
+                        class="title title--left title--uper title--normal title--small"
+                    >
+                        Plats
+                    </h2>
+                    <span class="green-line"></span>
 
-                    <div>
-                        <h3>Farandole de desserts</h3>
-                        <p>Du chef</p>
-                        <p>18€</p>
-                        <div></div>
+                    <div class="meal-card meal-card__border">
+                        <div class="meal-card__txt">
+                            <h3>Poulet rôti aux herbes de provence</h3>
+                            <p>Et sa crème de truffe</p>
+                        </div>
+                        <p class="meal-card__price">40€</p>
+                        <div class="meal-card__check"></div>
                     </div>
 
-                    <div>
-                        <h3>Crème brulée</h3>
-                        <p>Revisitée</p>
-                        <p>22€</p>
-                        <div></div>
+                    <div class="meal-card meal-card__border">
+                        <div class="meal-card__txt">
+                            <h3>Langouste rôtie</h3>
+                            <p>Et ses légumes de saison</p>
+                        </div>
+                        <p class="meal-card__price">35€</p>
+                        <div class="meal-card__check"></div>
                     </div>
 
-                    <div>
-                        <h3>Tiramisu</h3>
-                        <p>À la noisette</p>
-                        <p>23€</p>
-                        <div></div>
+                    <div class="meal-card meal-card__border">
+                        <div class="meal-card__txt">
+                            <h3>Côte de boeuf angus</h3>
+                            <p>Et sa purée de panais</p>
+                        </div>
+                        <p class="meal-card__price">44€</p>
+                        <div class="meal-card__check"></div>
                     </div>
                 </article>
 
-                <a href=""><p>Commander</p></a>
+                <article>
+                    <h2
+                        class="title title--left title--uper title--normal title--small"
+                    >
+                        Desserts
+                    </h2>
+                    <span class="green-line"></span>
+
+                    <div class="meal-card meal-card__border">
+                        <div class="meal-card__txt">
+                            <h3>Farandole de desserts</h3>
+                            <p>Du chef</p>
+                        </div>
+                        <p class="meal-card__price">18€</p>
+                        <div class="meal-card__check"></div>
+                    </div>
+
+                    <div class="meal-card meal-card__border">
+                        <div class="meal-card__txt">
+                            <h3>Crème brulée</h3>
+                            <p>Revisitée</p>
+                        </div>
+                        <p class="meal-card__price">22€</p>
+                        <div class="meal-card__check"></div>
+                    </div>
+
+                    <div class="meal-card meal-card__border">
+                        <div class="meal-card__txt">
+                            <h3>Tiramisu</h3>
+                            <p>À la noisette</p>
+                        </div>
+                        <p class="meal-card__price">23€</p>
+                        <div class="meal-card__check"></div>
+                    </div>
+                </article>
+
+                <div class="btn--center">
+                    <a href="" class="btn"><p>Commander</p></a>
+                </div>
             </section>
 
-            <footer>
-                <h2>ohmyfood</h2>
+            <footer class="footer--up">
+                <h2 class="footer__logo">ohmyfood</h2>
 
                 <nav>
                     <ul>
