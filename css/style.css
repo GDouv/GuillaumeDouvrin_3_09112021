@@ -87,6 +87,14 @@ h1 {
   margin-left: 1rem;
 }
 
+.footer__logo {
+  font-family: Shrikhand, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 1.3rem;
+  margin-left: 1.5rem;
+  padding-top: 20px;
+}
+
 .btn {
   display: flex;
   justify-content: center;
@@ -226,6 +234,14 @@ footer {
 }
 footer a {
   color: white;
+}
+
+ul {
+  list-style: none;
+  padding-left: 1.5rem;
+}
+ul li {
+  margin-bottom: 5px;
 }
 
 .page-head {
