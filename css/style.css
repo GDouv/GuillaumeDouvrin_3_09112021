@@ -389,12 +389,17 @@ ul li {
   border-radius: 2rem;
   overflow: hidden;
   position: relative;
-  bottom: 45px;
+  bottom: -145px;
   background-color: white;
   padding-bottom: 15px;
+  transform: translateY(-19%);
+  transition: transform 1000ms;
+  transform-origin: bottom;
 }
 .menu article {
   margin-bottom: 40px;
+  transform: scaleY(1);
+  transition: transform 1000ms;
 }
 .menu .btn--center {
   display: flex;
