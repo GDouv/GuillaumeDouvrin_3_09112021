@@ -81,6 +81,13 @@ h1 {
   font-weight: normal;
 }
 
+.index:hover {
+  background: #e9ddf8;
+}
+.index:hover i {
+  color: #782cd3;
+}
+
 .page-title {
   font-size: 1.4rem;
   text-align: left;
@@ -193,6 +200,19 @@ h1 {
   margin-left: 1rem;
 }
 
+.new {
+  position: absolute;
+  background: lightgreen;
+  color: green;
+  padding: 5px 8px;
+  font-size: 0.82rem;
+  border-radius: 0.2rem;
+}
+.new--top-right {
+  top: 10px;
+  right: 10px;
+}
+
 .logo {
   width: 10rem;
   margin: 1.5rem 0 1rem 0;
@@ -206,14 +226,18 @@ h1 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+}
+.page__header .div__arrow-left {
+  width: 3.5rem;
+  display: flex;
+  justify-content: center;
 }
 .page__header i {
   font-size: 1.3rem;
 }
 
-.logo--margin-right {
-  margin-right: 3.8rem;
+.logo--margin-left {
+  margin-left: 1rem;
 }
 .logo--margin-top16 {
   margin-top: 16px;
@@ -263,6 +287,9 @@ h1 {
   background-color: #f7f7f7;
 }
 
+.resto-pic {
+  position: relative;
+}
 .resto-pic img {
   object-fit: cover;
   width: 100%;

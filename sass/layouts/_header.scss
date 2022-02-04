@@ -4,7 +4,12 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+
+    .div__arrow-left {
+        width: 3.5rem;
+        display: flex;
+        justify-content: center;
+    }
 
     i {
         font-size: 1.3rem;
@@ -12,8 +17,8 @@
 }
 
 .logo {
-    &--margin-right {
-        margin-right: 3.8rem;
+    &--margin-left {
+        margin-left: 1rem;
     }
 
     &--margin-top16 {

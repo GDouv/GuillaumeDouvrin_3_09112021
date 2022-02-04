@@ -46,6 +46,14 @@ h1 {
     font-weight: normal;
 }
 
+.index:hover {
+    i {
+        color: darken($color: $color-primary, $amount: 10%);
+    }
+
+    background: lighten($color: $color-primary, $amount: 32%);
+}
+
 .page-title {
     font-size: 1.4rem;
     text-align: left;
