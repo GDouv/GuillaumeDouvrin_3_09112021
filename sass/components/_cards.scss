@@ -33,7 +33,45 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    height: 58px;
+    overflow: hidden;
     @include box-shadow;
+
+    &:hover > .meal-card__check {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        min-width: 60px;
+        height: 100%;
+        background-color: $color-tertiary;
+        transform: scaleX(1);
+        transform-origin: right;
+        transition: transform 600ms;
+
+        > .check {
+            transform: translateX(-15px) rotate(-360deg);
+            transition: transform 1500ms;
+        }
+    }
+
+    .check {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        transition: 1500ms;
+
+        i {
+            font-size: 25px;
+            color: white;
+        }
+    }
+
+    &__check {
+        transform: scaleX(0);
+        transition: 1500ms;
+    }
 
     &__txt {
         display: flex;
@@ -42,35 +80,32 @@
         h3 {
             font-weight: bold;
             font-size: 1rem;
+            margin-top: 10px;
             @include meal-card__txt;
         }
 
         p {
-            margin: 4px 0 0 0;
+            margin: 4px 0 8px 0;
             @include meal-card__txt;
         }
     }
 
     &__price {
         font-weight: bold;
-        margin: 0 1rem 0 0;
-    }
-
-    &__check {
-        display: none;
+        margin: 0 1rem 8px 0;
     }
 
     &__border {
         border-radius: 1rem;
         margin: 12px 1rem;
-        padding: 10px 0 8px 0.5rem;
+        padding: 0 0 0 0.5rem;
 
         &:hover {
             p,
             h3 {
-                text-overflow: unset;
-                overflow: unset;
-                white-space: unset;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
             }
         }
     }

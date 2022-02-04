@@ -149,7 +149,40 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  height: 58px;
+  overflow: hidden;
   box-shadow: 0.1rem 0.1rem 0.6rem #797979;
+}
+.meal-card:hover > .meal-card__check {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  min-width: 60px;
+  height: 100%;
+  background-color: #99e2d0;
+  transform: scaleX(1);
+  transform-origin: right;
+  transition: transform 600ms;
+}
+.meal-card:hover > .meal-card__check > .check {
+  transform: translateX(-15px) rotate(-360deg);
+  transition: transform 1500ms;
+}
+.meal-card .check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  transition: 1500ms;
+}
+.meal-card .check i {
+  font-size: 25px;
+  color: white;
+}
+.meal-card__check {
+  transform: scaleX(0);
+  transition: 1500ms;
 }
 .meal-card__txt {
   display: flex;
@@ -158,6 +191,7 @@ h1 {
 .meal-card__txt h3 {
   font-weight: bold;
   font-size: 1rem;
+  margin-top: 10px;
   max-width: 240px;
   padding-right: 1rem;
   white-space: nowrap;
@@ -165,7 +199,7 @@ h1 {
   text-overflow: ellipsis;
 }
 .meal-card__txt p {
-  margin: 4px 0 0 0;
+  margin: 4px 0 8px 0;
   max-width: 240px;
   padding-right: 1rem;
   white-space: nowrap;
@@ -174,21 +208,18 @@ h1 {
 }
 .meal-card__price {
   font-weight: bold;
-  margin: 0 1rem 0 0;
-}
-.meal-card__check {
-  display: none;
+  margin: 0 1rem 8px 0;
 }
 .meal-card__border {
   border-radius: 1rem;
   margin: 12px 1rem;
-  padding: 10px 0 8px 0.5rem;
+  padding: 0 0 0 0.5rem;
 }
 .meal-card__border:hover p,
 .meal-card__border:hover h3 {
-  text-overflow: unset;
-  overflow: unset;
-  white-space: unset;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .green-line {
