@@ -71,6 +71,7 @@
     &__check {
         transform: scaleX(0);
         transition: 1500ms;
+        width: 0;
     }
 
     &__txt {
@@ -93,6 +94,7 @@
     &__price {
         font-weight: bold;
         margin: 0 1rem 8px 0;
+        justify-self: right;
     }
 
     &__border {
