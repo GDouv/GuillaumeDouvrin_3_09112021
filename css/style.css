@@ -392,7 +392,7 @@ h1 {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .card-resto {
-    width: 95%;
+    width: 350px;
   }
 }
 
@@ -417,6 +417,14 @@ figcaption {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 
 footer {
