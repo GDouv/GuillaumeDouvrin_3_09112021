@@ -12,6 +12,17 @@
         height: 60px;
     }
 
+    @media screen and (min-width: 992px) and (max-width: 1439px) {
+        width: 400px;
+        height: 70px;
+        margin: 20px 0 30px 100px;
+
+        p {
+            font-size: 1.2rem;
+            margin-left: 30px;
+        }
+    }
+
     &__number {
         display: flex;
         color: #fff;

@@ -27,6 +27,34 @@
             width: 66%;
         }
     }
+
+    @media screen and (min-width: 992px) and (max-width: 1439px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        article p {
+            font-size: 1.2rem;
+        }
+
+        h1 {
+            margin-top: 50px;
+            font-size: 1.6rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            width: 66%;
+        }
+
+        article,
+        aside {
+            width: 45%;
+        }
+    }
 }
 
 .explore {
@@ -79,6 +107,11 @@
     @media screen and (min-width: 768px) and (max-width: 991px) {
         width: 350px;
     }
+
+    @media screen and (min-width: 992px) and (max-width: 1439px) {
+        width: 492px;
+        margin-bottom: 30px;
+    }
 }
 
 figcaption {
@@ -110,6 +143,12 @@ figcaption {
     @media screen and (min-width: 768px) and (max-width: 991px) {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 992px) and (max-width: 1439px) {
+        display: flex;
+        justify-content: space-around;
         flex-wrap: wrap;
     }
 }
