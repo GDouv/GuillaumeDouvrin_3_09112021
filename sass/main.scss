@@ -77,25 +77,3 @@ i.fa-heart:hover {
     border: 0 solid transparent;
     transition: transform 300ms;
 }
-
-.to-top:after {
-    top: 100%;
-}
-
-.to-top:hover:after {
-    top: 0%;
-}
-
-.couleur-remplissage:after {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    background-color: linear-gradient(to bottom, #9356dc, #ff79da);
-    transition: 350ms ease-in-out;
-    transition-property: top, bottom, left, right;
-}
