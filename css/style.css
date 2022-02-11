@@ -206,18 +206,18 @@ h1 {
   background-color: #99e2d0;
   transform: scaleX(1);
   transform-origin: right;
-  transition: all 600ms;
+  transition: all 500ms ease;
 }
 .meal-card:hover > .meal-card__check > .check {
   transform: translateX(-10px) rotate(-360deg);
-  transition: transform 1500ms;
+  transition: transform 1000ms;
 }
 .meal-card .meal-card__check {
   min-width: 0;
   height: 100%;
   transform: scaleX(0);
   transform-origin: right;
-  transition: all 1500ms;
+  transition: all 500ms ease;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -290,6 +290,11 @@ h1 {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+}
+.meal-card .meal-card {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 5000ms, visibility 5000ms 500ms;
 }
 
 .green-line {
