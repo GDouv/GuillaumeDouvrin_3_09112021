@@ -2,6 +2,10 @@
     box-shadow: 0.1rem 0.1rem 0.6rem rgb(121, 121, 121);
 }
 
+@mixin box-shadow-stronger {
+    box-shadow: 0.2rem 0.3rem 0.8rem rgb(77, 77, 77);
+}
+
 @mixin meal-card__txt {
     max-width: 240px;
     padding-right: 0.5rem;

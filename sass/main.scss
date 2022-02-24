@@ -13,8 +13,8 @@
 .icon_heart {
     display: flex;
     justify-content: flex-end;
-    font-size: 1.5rem;
-    margin: 1.2rem 0 1.3rem 1rem;
+    font-size: 2rem;
+    margin: 1.2rem 1.2rem 1.3rem 1rem;
 
     &:hover {
         i.fa-heart {
@@ -72,8 +72,24 @@ i.fas.fa-heart {
     font-size: 2rem;
 }
 
+.remplissage {
+    animation-name: fill;
+    animation-duration: 500ms;
+    transform: translateY(1);
+}
+
+@keyframes fill {
+    0% {
+        transform: translateY(0);
+        transform-origin: bottom;
+    }
+
+    100% {
+        transform: translateY(1);
+        transform-origin: bottom;
+    }
+}
+
 i.fa-heart:hover {
     cursor: pointer;
-    border: 0 solid transparent;
-    transition: transform 300ms;
 }
