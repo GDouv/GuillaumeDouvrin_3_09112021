@@ -25,8 +25,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: opacity 1s ease-in-out;
-    animation: disapear 0.5s 2s forwards;
+    animation: disapear ease-in-out 0.8s 2s forwards;
 }
 
 .dot {
