@@ -25,7 +25,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: disapear ease-in-out 0.8s 2s forwards;
+    animation: disappear ease-in-out 0.8s 2s forwards;
 }
 
 .dot {
@@ -51,7 +51,7 @@ body {
     }
 }
 
-@keyframes disapear {
+@keyframes disappear {
     100% {
         opacity: 0;
         z-index: -1;
