@@ -52,8 +52,6 @@
     height: 58px;
     overflow: hidden;
     @include box-shadow;
-    transform: opacity(1);
-    transition: all 5000ms;
 
     &:hover > .meal-card__check {
         display: flex;

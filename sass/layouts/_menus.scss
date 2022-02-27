@@ -17,27 +17,37 @@
 }
 
 .m1 {
-    animation: appear ease-in-out 2s forwards;
+    opacity: 0;
+    animation: appear 800ms forwards;
+    animation-timing-function: cubic-bezier(0.35, 0.73, 0.33, 1);
 }
 
 .m2 {
     opacity: 0;
-    animation: appear ease-in-out 2s forwards;
-    animation-delay: 0.5s;
+    animation: appear 800ms forwards;
+    animation-delay: 200ms;
+    animation-timing-function: cubic-bezier(0.35, 0.73, 0.33, 1);
 }
 
 .m3 {
     opacity: 0;
-    animation: appear ease-in-out 2s forwards;
-    animation-delay: 1s;
+    animation: appear 800ms forwards;
+    animation-delay: 400ms;
+    animation-timing-function: cubic-bezier(0.35, 0.73, 0.33, 1);
 }
 
 @keyframes appear {
     0% {
         opacity: 0;
+        transform: translateY(20px);
+    }
+
+    70% {
+        opacity: 1;
     }
 
     100% {
         opacity: 1;
+        transform: translateY(0);
     }
 }
