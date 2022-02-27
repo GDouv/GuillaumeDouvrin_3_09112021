@@ -110,13 +110,16 @@
         display: flex;
         justify-content: center;
 
+        @media screen and (min-width: 992px) and (max-width: 1439px) {
+            height: 300px;
+        }
+
         img {
-            object-position: 0;
             height: 100%;
             object-fit: cover;
 
             @media screen and (min-width: 992px) and (max-width: 1439px) {
-                width: 60%;
+                object-position: 0 -220px;
             }
         }
     }

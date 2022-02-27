@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 html {
@@ -248,7 +249,7 @@ h1 {
   align-items: center;
   min-width: 50px;
   height: 100%;
-  background-color: #99e2d0;
+  background-color: #71d7be;
   transform: scaleX(1);
   transform-origin: right;
   transition: all 500ms ease;
@@ -346,18 +347,19 @@ h1 {
   display: block;
   width: 35px;
   height: 3px;
-  border: #99e2d0 solid 1px;
-  background-color: #99e2d0;
+  border: #71d7be solid 1px;
+  background-color: #71d7be;
   margin-left: 1rem;
 }
 
 .new {
   position: absolute;
-  background: lightgreen;
-  color: green;
+  background: #99e2d0;
+  color: #24806a;
   padding: 5px 8px;
-  font-size: 0.82rem;
+  font-size: 0.85rem;
   border-radius: 0.2rem;
+  font-weight: bold;
 }
 .new--top-right {
   top: 10px;
@@ -500,14 +502,18 @@ h1 {
   display: flex;
   justify-content: center;
 }
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  .resto-pic-page {
+    height: 300px;
+  }
+}
 .resto-pic-page img {
-  object-position: 0;
   height: 100%;
   object-fit: cover;
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
   .resto-pic-page img {
-    width: 60%;
+    object-position: 0 -220px;
   }
 }
 
@@ -603,6 +609,30 @@ ul li {
   justify-content: center;
 }
 
+/*
+TENTATIVE DE CREER UNE BOUCLE POUR L'INCREMENTATION DU ANIMATION-DELAY
+
+$anim-delay: 200ms;
+$reduc-delay: 20ms;
+
+@mixin reduc-delay {
+}
+
+.mboucle {
+    @for $i from 1 through 10 {
+        &#"{$i} { enlever le " après le "#" pour avoir un code fonctionnel
+            animation-delay: (
+                    $anim-delay +
+                        ($anim-delay - ($anim-delay - $reduc-delay * $i)) *
+                        $i
+                ) -
+                $i *
+                90;
+        }
+    }
+}
+
+*/
 .m1 {
   opacity: 0;
   animation: appear 800ms forwards;
@@ -619,7 +649,56 @@ ul li {
 .m3 {
   opacity: 0;
   animation: appear 800ms forwards;
-  animation-delay: 400ms;
+  animation-delay: 380ms;
+  animation-timing-function: cubic-bezier(0.35, 0.73, 0.33, 1);
+}
+
+.m4 {
+  opacity: 0;
+  animation: appear 800ms forwards;
+  animation-delay: 540ms;
+  animation-timing-function: cubic-bezier(0.35, 0.73, 0.33, 1);
+}
+
+.m5 {
+  opacity: 0;
+  animation: appear 800ms forwards;
+  animation-delay: 680ms;
+  animation-timing-function: cubic-bezier(0.35, 0.73, 0.33, 1);
+}
+
+.m6 {
+  opacity: 0;
+  animation: appear 800ms forwards;
+  animation-delay: 800ms;
+  animation-timing-function: cubic-bezier(0.35, 0.73, 0.33, 1);
+}
+
+.m7 {
+  opacity: 0;
+  animation: appear 800ms forwards;
+  animation-delay: 900ms;
+  animation-timing-function: cubic-bezier(0.35, 0.73, 0.33, 1);
+}
+
+.m8 {
+  opacity: 0;
+  animation: appear 800ms forwards;
+  animation-delay: 980ms;
+  animation-timing-function: cubic-bezier(0.35, 0.73, 0.33, 1);
+}
+
+.m9 {
+  opacity: 0;
+  animation: appear 800ms forwards;
+  animation-delay: 1040ms;
+  animation-timing-function: cubic-bezier(0.35, 0.73, 0.33, 1);
+}
+
+.m10 {
+  opacity: 0;
+  animation: appear 800ms forwards;
+  animation-delay: 1080ms;
   animation-timing-function: cubic-bezier(0.35, 0.73, 0.33, 1);
 }
 

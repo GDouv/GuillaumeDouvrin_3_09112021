@@ -2,18 +2,19 @@
     display: block;
     width: 35px;
     height: 3px;
-    border: $color-tertiary solid 1px;
-    background-color: $color-tertiary;
+    border: darken($color-tertiary, 10) solid 1px;
+    background-color: darken($color-tertiary, 10);
     margin-left: 1rem;
 }
 
 .new {
     position: absolute;
-    background: lightgreen;
-    color: green;
+    background: $color-tertiary;
+    color: darken($color-tertiary, 42);
     padding: 5px 8px;
-    font-size: 0.82rem;
+    font-size: 0.85rem;
     border-radius: 0.2rem;
+    font-weight: bold;
 
     &--top-right {
         top: 10px;
