@@ -110,16 +110,28 @@
         display: flex;
         justify-content: center;
 
+        @media screen and (min-width: 768px) and (max-width: 991px) {
+            height: 320px;
+        }
+
         @media screen and (min-width: 992px) and (max-width: 1439px) {
-            height: 300px;
+            height: 320px;
         }
 
         img {
             height: 100%;
             object-fit: cover;
 
-            @media screen and (min-width: 992px) and (max-width: 1439px) {
-                object-position: 0 -220px;
+            @media screen and (min-width: 768px) and (max-width: 991px) {
+                object-position: 0 -200px;
+            }
+
+            @media screen and (min-width: 992px) and (max-width: 1219px) {
+                object-position: 0 -290px;
+            }
+
+            @media screen and (min-width: 1220px) and (max-width: 1440px) {
+                object-position: 0 -360px;
             }
         }
     }
