@@ -21,3 +21,12 @@
         right: 10px;
     }
 }
+
+.grey-bot {
+    width: 5000px;
+    height: 100px;
+    z-index: -1;
+    position: absolute;
+    top: 1500px;
+    background-color: #292929;
+}

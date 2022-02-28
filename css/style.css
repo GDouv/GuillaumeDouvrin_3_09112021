@@ -290,7 +290,7 @@ h1 {
   font-weight: bold;
   font-size: 1rem;
   margin-top: 10px;
-  max-width: 240px;
+  max-width: 253px;
   padding-right: 0.5rem;
   white-space: nowrap;
   overflow: hidden;
@@ -303,7 +303,7 @@ h1 {
 }
 .meal-card__txt p {
   margin: 4px 0 8px 0;
-  max-width: 240px;
+  max-width: 253px;
   padding-right: 0.5rem;
   white-space: nowrap;
   overflow: hidden;
@@ -364,6 +364,15 @@ h1 {
 .new--top-right {
   top: 10px;
   right: 10px;
+}
+
+.grey-bot {
+  width: 5000px;
+  height: 100px;
+  z-index: -1;
+  position: absolute;
+  top: 1500px;
+  background-color: #292929;
 }
 
 .logo {
