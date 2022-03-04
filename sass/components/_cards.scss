@@ -53,9 +53,12 @@
     overflow: hidden;
     @include box-shadow;
 
-    @media screen and (min-width: 768px) and (max-width: 1440px) {
-        width: 210px;
-        height: 100px;
+    @media screen and (min-width: 992px) and (max-width: 1119px) {
+        max-width: 300px;
+    }
+
+    @media screen and (min-width: 1120px) and (max-width: 1440px) {
+        max-width: 360px;
     }
 
     &:hover > .meal-card__check {
@@ -72,6 +75,7 @@
         > .check {
             transform: translateX(-10px) rotate(-360deg);
             transition: transform 1000ms;
+            width: 30px;
         }
     }
 
@@ -90,7 +94,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 30px;
+        width: 3px;
         height: 30px;
 
         i {
@@ -114,6 +118,16 @@
             margin-top: 10px;
             @include meal-card__txt;
             overflow: visible;
+
+            @media screen and (min-width: 768px) and (max-width: 991px) {
+                font-size: 1.2rem;
+                margin-bottom: 0;
+            }
+
+            @media screen and (min-width: 1120px) and (max-width: 1440px) {
+                font-size: 1.1rem;
+                margin-bottom: 0;
+            }
         }
     }
 
@@ -125,10 +139,22 @@
             margin: 4px 0 8px 0;
             @include meal-card__txt;
             font-size: 0.92rem;
+
+            @media screen and (min-width: 768px) and (max-width: 991px) {
+                font-size: 1rem;
+            }
         }
 
         :first-child {
             font-size: 0.81rem;
+
+            @media screen and (min-width: 768px) and (max-width: 991px) {
+                font-size: 1rem;
+            }
+
+            @media screen and (min-width: 992px) and (max-width: 1440px) {
+                font-size: 0.9rem;
+            }
         }
     }
 
