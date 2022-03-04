@@ -100,10 +100,30 @@
         width: 100%;
         height: 148px;
         object-position: 0 -48px;
+
+        @media screen and (min-width: 390px) and (max-width: 539px) {
+            object-position: 0 -80px;
+        }
+
+        @media screen and (min-width: 540px) and (max-width: 767px) {
+            object-position: 0 -150px;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 991px) {
+            object-position: 0 -70px;
+        }
+
+        @media screen and (min-width: 992px) and (max-width: 1440px) {
+            object-position: 0 -90px;
+        }
     }
 
     &--up img {
         object-position: 0 -130px;
+
+        @media screen and (min-width: 390px) and (max-width: 767px) {
+            object-position: 0 -50px;
+        }
     }
 
     &-page {
@@ -121,6 +141,10 @@
         img {
             height: 100%;
             object-fit: cover;
+
+            @media screen and (min-width: 390px) and (max-width: 767px) {
+                object-position: 0 -40px;
+            }
 
             @media screen and (min-width: 768px) and (max-width: 991px) {
                 object-position: 0 -200px;

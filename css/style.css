@@ -243,6 +243,12 @@ h1 {
   overflow: hidden;
   box-shadow: 0.1rem 0.1rem 0.6rem #797979;
 }
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+  .meal-card {
+    width: 210px;
+    height: 100px;
+  }
+}
 .meal-card:hover > .meal-card__check {
   display: flex;
   justify-content: right;
@@ -504,8 +510,33 @@ h1 {
   height: 148px;
   object-position: 0 -48px;
 }
+@media screen and (min-width: 390px) and (max-width: 539px) {
+  .resto-pic img {
+    object-position: 0 -80px;
+  }
+}
+@media screen and (min-width: 540px) and (max-width: 767px) {
+  .resto-pic img {
+    object-position: 0 -150px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .resto-pic img {
+    object-position: 0 -70px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1440px) {
+  .resto-pic img {
+    object-position: 0 -90px;
+  }
+}
 .resto-pic--up img {
   object-position: 0 -130px;
+}
+@media screen and (min-width: 390px) and (max-width: 767px) {
+  .resto-pic--up img {
+    object-position: 0 -50px;
+  }
 }
 .resto-pic-page {
   display: flex;
@@ -524,6 +555,11 @@ h1 {
 .resto-pic-page img {
   height: 100%;
   object-fit: cover;
+}
+@media screen and (min-width: 390px) and (max-width: 767px) {
+  .resto-pic-page img {
+    object-position: 0 -40px;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .resto-pic-page img {
@@ -631,6 +667,12 @@ ul li {
 .menu .btn--center {
   display: flex;
   justify-content: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+  .articles {
+    display: flex;
+  }
 }
 
 /*
