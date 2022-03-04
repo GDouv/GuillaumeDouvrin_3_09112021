@@ -96,6 +96,22 @@ h1 {
   font-size: 1.3rem;
   padding: 0.5rem 3.5rem 0 3.5rem;
 }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .title {
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 912px) and (max-width: 991px) {
+  .title {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .title {
+    font-size: 1.6rem;
+    padding-top: 1.8rem;
+  }
+}
 .title--center {
   text-align: center;
 }
@@ -114,8 +130,25 @@ h1 {
   font-size: 1rem;
 }
 
+.restaurants {
+  padding-top: 15px;
+}
+@media screen and (min-width: 768px) {
+  .restaurants {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-left: 30px;
+  }
+}
+
 .intro {
   text-align: center;
+}
+@media screen and (min-width: 1440px) {
+  .intro {
+    font-size: 1.2rem;
+  }
 }
 
 .index__number {
@@ -157,7 +190,7 @@ h1 {
   box-shadow: 0.2rem 0.3rem 0.8rem #4d4d4d;
 }
 .btn p {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: white;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -168,23 +201,37 @@ h1 {
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
   .btn p {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .btn p {
     font-size: 1.4rem;
     text-align: center;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .btn {
-    width: 200px;
-    height: 70px;
+    width: 58%;
+    height: 60px;
     margin-top: 25px;
     align-items: center;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1439px) {
   .btn {
-    width: 300px;
-    height: 100px;
+    width: 58%;
+    height: 80px;
     margin-top: 30px;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .btn {
+    width: 58%;
+    height: 80px;
+    margin-top: 50px;
     align-items: center;
   }
 }
@@ -204,7 +251,7 @@ h1 {
     height: 60px;
   }
 }
-@media screen and (min-width: 992px) and (max-width: 1439px) {
+@media screen and (min-width: 992px) {
   .index {
     width: 400px;
     height: 70px;
@@ -248,9 +295,14 @@ h1 {
     max-width: 300px;
   }
 }
-@media screen and (min-width: 1120px) and (max-width: 1440px) {
+@media screen and (min-width: 1120px) and (max-width: 1439px) {
   .meal-card {
-    max-width: 360px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .meal-card {
+    width: 110%;
   }
 }
 .meal-card:hover > .meal-card__check {
@@ -313,7 +365,7 @@ h1 {
     max-width: 400px;
   }
 }
-@media screen and (min-width: 992px) and (max-width: 1440px) {
+@media screen and (min-width: 992px) {
   .meal-card__title h3 {
     max-width: 280px;
   }
@@ -329,7 +381,7 @@ h1 {
     margin-bottom: 1px;
   }
 }
-@media screen and (min-width: 1120px) and (max-width: 1440px) {
+@media screen and (min-width: 1120px) {
   .meal-card__title h3 {
     font-size: 1.1rem;
     margin-bottom: 2px;
@@ -353,7 +405,7 @@ h1 {
     max-width: 400px;
   }
 }
-@media screen and (min-width: 992px) and (max-width: 1440px) {
+@media screen and (min-width: 992px) {
   .meal-card__txt p {
     max-width: 280px;
   }
@@ -371,7 +423,7 @@ h1 {
     font-size: 1rem;
   }
 }
-@media screen and (min-width: 992px) and (max-width: 1440px) {
+@media screen and (min-width: 992px) {
   .meal-card__txt :first-child {
     font-size: 0.9rem;
   }
@@ -430,12 +482,19 @@ h1 {
 }
 
 .grey-bot {
-  width: 5000px;
-  height: 100px;
+  background-color: #2a2a2a;
+  width: 100%;
+  height: 5px;
+  position: relative;
   z-index: -1;
-  position: absolute;
-  top: 1500px;
-  background-color: #292929;
+}
+.grey-bot__page {
+  background-color: #2a2a2a;
+  width: 100%;
+  height: 50px;
+  position: relative;
+  top: 30px;
+  z-index: -1;
 }
 
 .logo {
@@ -494,28 +553,35 @@ h1 {
     display: flex;
     flex-direction: row;
   }
+  .section-presentation article,
+.section-presentation aside {
+    width: 50%;
+  }
+  .section-presentation aside {
+    padding-left: 2%;
+  }
   .section-presentation p {
     width: 66%;
   }
 }
-@media screen and (min-width: 992px) and (max-width: 1439px) {
+@media screen and (min-width: 992px) {
   .section-presentation {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
   }
-  .section-presentation article p {
-    font-size: 1.2rem;
+  .section-presentation .intro {
+    font-size: 1.1rem;
   }
   .section-presentation aside h2 {
-    margin-left: 200px;
+    margin-left: 135px;
   }
   .section-presentation h1 {
     margin-top: 50px;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
   .section-presentation h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .section-presentation p {
     width: 66%;
@@ -523,6 +589,11 @@ h1 {
   .section-presentation article,
 .section-presentation aside {
     width: 45%;
+  }
+  .section-presentation article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -542,7 +613,7 @@ h1 {
     background-color: white;
   }
 }
-@media screen and (min-width: 992px) and (max-width: 1439px) {
+@media screen and (min-width: 992px) {
   .explore {
     background-color: white;
   }
@@ -582,9 +653,14 @@ h1 {
     object-position: 0 -70px;
   }
 }
-@media screen and (min-width: 992px) and (max-width: 1440px) {
+@media screen and (min-width: 992px) and (max-width: 1309px) {
   .resto-pic img {
     object-position: 0 -90px;
+  }
+}
+@media screen and (min-width: 1310px) {
+  .resto-pic img {
+    object-position: 0 -150px;
   }
 }
 .resto-pic--up img {
@@ -604,7 +680,7 @@ h1 {
     height: 320px;
   }
 }
-@media screen and (min-width: 992px) and (max-width: 1439px) {
+@media screen and (min-width: 992px) {
   .resto-pic-page {
     height: 320px;
   }
@@ -628,7 +704,7 @@ h1 {
     object-position: 0 -290px;
   }
 }
-@media screen and (min-width: 1220px) and (max-width: 1440px) {
+@media screen and (min-width: 1220px) {
   .resto-pic-page img {
     object-position: 0 -360px;
   }
@@ -644,10 +720,16 @@ h1 {
     width: 340px;
   }
 }
-@media screen and (min-width: 992px) and (max-width: 1439px) {
+@media screen and (min-width: 992px) and (max-width: 1309px) {
   .card-resto {
     width: 455px;
     margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1310px) {
+  .card-resto {
+    width: 560px;
+    margin-bottom: 40px;
   }
 }
 
@@ -681,7 +763,7 @@ figcaption {
     flex-wrap: wrap;
   }
 }
-@media screen and (min-width: 992px) and (max-width: 1439px) {
+@media screen and (min-width: 992px) {
   .cards-container {
     display: flex;
     justify-content: space-evenly;
@@ -726,7 +808,7 @@ ul li {
   justify-content: center;
 }
 
-@media screen and (min-width: 992px) and (max-width: 1440px) {
+@media screen and (min-width: 992px) {
   .articles {
     display: flex;
     justify-content: space-evenly;

@@ -12,7 +12,7 @@
         height: 60px;
     }
 
-    @media screen and (min-width: 992px) and (max-width: 1439px) {
+    @media screen and (min-width: 992px) {
         width: 400px;
         height: 70px;
         margin: 20px 0 30px 50px;
@@ -57,8 +57,12 @@
         max-width: 300px;
     }
 
-    @media screen and (min-width: 1120px) and (max-width: 1440px) {
-        max-width: 360px;
+    @media screen and (min-width: 1120px) and (max-width: 1439px) {
+        width: 100%;
+    }
+
+    @media screen and (min-width: 1440px) {
+        width: 110%;
     }
 
     &:hover > .meal-card__check {
@@ -128,7 +132,7 @@
                 margin-bottom: 1px;
             }
 
-            @media screen and (min-width: 1120px) and (max-width: 1440px) {
+            @media screen and (min-width: 1120px) {
                 font-size: 1.1rem;
                 margin-bottom: 2px;
             }
@@ -156,7 +160,7 @@
                 font-size: 1rem;
             }
 
-            @media screen and (min-width: 992px) and (max-width: 1440px) {
+            @media screen and (min-width: 992px) {
                 font-size: 0.9rem;
             }
         }
