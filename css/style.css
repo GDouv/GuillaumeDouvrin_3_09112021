@@ -324,10 +324,15 @@ h1 {
     margin-bottom: 0;
   }
 }
+@media screen and (min-width: 992px) and (max-width: 1119px) {
+  .meal-card__title h3 {
+    margin-bottom: 1px;
+  }
+}
 @media screen and (min-width: 1120px) and (max-width: 1440px) {
   .meal-card__title h3 {
     font-size: 1.1rem;
-    margin-bottom: 0;
+    margin-bottom: 2px;
   }
 }
 .meal-card__txt {
