@@ -185,18 +185,23 @@
     border-radius: 1rem;
     @include box-shadow;
 
+    @media screen and (min-width: 768px) {
+        &:hover {
+            transform: scale(1.05);
+            transition: transform ease-out 150ms;
+        }
+    }
+
     @media screen and (min-width: 768px) and (max-width: 991px) {
         width: 340px;
     }
 
     @media screen and (min-width: 992px) and (max-width: 1309px) {
         width: 455px;
-        margin-bottom: 30px;
     }
 
     @media screen and (min-width: 1310px) {
         width: 560px;
-        margin-bottom: 40px;
     }
 }
 

@@ -18,9 +18,10 @@ h1 {
 
     @media screen and (min-width: 768px) and (max-width: 991px) {
         margin-top: 20px;
+        margin-bottom: 20px;
     }
 
-    @media screen and (min-width: 912px) and (max-width: 991px) {
+    @media screen and (min-width: 912px) {
         margin-bottom: 20px;
     }
 
@@ -95,4 +96,8 @@ h1 {
     font-size: 1.3rem;
     margin-left: 1.5rem;
     padding-top: 20px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 1.6rem;
+    }
 }

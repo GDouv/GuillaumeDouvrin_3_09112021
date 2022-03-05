@@ -54,15 +54,15 @@
     @include box-shadow;
 
     @media screen and (min-width: 992px) and (max-width: 1119px) {
-        max-width: 300px;
+        width: 293px;
     }
 
     @media screen and (min-width: 1120px) and (max-width: 1439px) {
-        width: 100%;
+        width: 325px;
     }
 
     @media screen and (min-width: 1440px) {
-        width: 110%;
+        width: 375px;
     }
 
     &:hover > .meal-card__check {

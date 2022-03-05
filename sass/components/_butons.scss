@@ -53,3 +53,11 @@
         align-items: center;
     }
 }
+
+.margin-bot {
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1310px) {
+        margin-bottom: 40px;
+    }
+}
