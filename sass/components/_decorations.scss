@@ -38,3 +38,11 @@
         z-index: -1;
     }
 }
+
+.max-height-img {
+    max-height: 500px;
+
+    @media screen and (max-width: 768px) {
+        max-height: 320px;
+    }
+}

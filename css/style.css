@@ -512,6 +512,15 @@ h1 {
   z-index: -1;
 }
 
+.max-height-img {
+  max-height: 500px;
+}
+@media screen and (max-width: 768px) {
+  .max-height-img {
+    max-height: 320px;
+  }
+}
+
 .logo {
   width: 10rem;
   margin: 1.5rem 0 1rem 0;
@@ -922,21 +931,21 @@ test commit
 .m8 {
   opacity: 0;
   animation: appear 800ms forwards;
-  animation-delay: 980ms;
+  animation-delay: 990ms;
   animation-timing-function: cubic-bezier(0.35, 0.73, 0.33, 1);
 }
 
 .m9 {
   opacity: 0;
   animation: appear 800ms forwards;
-  animation-delay: 1040ms;
+  animation-delay: 1070ms;
   animation-timing-function: cubic-bezier(0.35, 0.73, 0.33, 1);
 }
 
 .m10 {
   opacity: 0;
   animation: appear 800ms forwards;
-  animation-delay: 1080ms;
+  animation-delay: 1140ms;
   animation-timing-function: cubic-bezier(0.35, 0.73, 0.33, 1);
 }
 
