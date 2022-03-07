@@ -568,11 +568,6 @@ i.fa-heart:hover {
   overflow: hidden;
   white-space: nowrap;
 }
-.meal-card .meal-card {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 5000ms, visibility 5000ms 500ms;
-}
 
 .margin-bot {
   margin-bottom: 30px;
