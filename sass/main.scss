@@ -13,52 +13,23 @@
 .icon_heart {
     display: flex;
     justify-content: flex-end;
-    font-size: 2rem;
+    font-size: 2.25rem;
     margin: 1.2rem 1.2rem 1.3rem 1rem;
+    color: black;
+    -webkit-background-clip: text;
+    z-index: 0;
+    position: relative;
+    top: 4px;
 
     &:hover {
         i.fa-heart {
-            display: none;
+            display: block;
+            transform: translateX(100%);
         }
 
         i.fas.fa-heart {
             display: block;
-        }
-    }
-}
-
-/* icon heart palette */
-.icon_heart_start {
-    display: flex;
-    justify-content: flex-end;
-    font-size: 2rem;
-    margin-top: -2rem;
-
-    &:hover {
-        i.fa-heart {
-            display: none;
-        }
-
-        i.fas.fa-heart {
-            display: block;
-        }
-    }
-}
-
-/* icon_heart 3 */
-.icon_heart_3 {
-    display: flex;
-    justify-content: flex-end;
-    font-size: 2rem;
-    margin: 1.2rem 0 2rem 9rem;
-
-    &:hover {
-        i.fa-heart {
-            display: none;
-        }
-
-        i.fas.fa-heart {
-            display: block;
+            z-index: -1;
         }
     }
 }
@@ -66,26 +37,22 @@
 i.fas.fa-heart {
     display: none;
     background: linear-gradient(to bottom, #9356dc, #ff79da);
-    background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     font-size: 2rem;
+    position: relative;
+    right: 44%;
+    top: 2px;
+    animation: fill 0.5s;
 }
 
-.remplissage {
-    animation-name: fill;
-    animation-duration: 500ms;
-    transform: translateY(1);
+.couleur-remplissage {
+    animation: fill 0.2s;
 }
 
 @keyframes fill {
     0% {
-        transform: translateY(0);
-        transform-origin: bottom;
-    }
-
-    100% {
-        transform: translateY(1);
+        transform: translate(35px, 40px);
         transform-origin: bottom;
     }
 }
