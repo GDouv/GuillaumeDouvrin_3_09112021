@@ -24,33 +24,6 @@
     }
 }
 
-/*
-TENTATIVE DE CREER UNE BOUCLE POUR L'INCREMENTATION DU ANIMATION-DELAY
-
-$anim-delay: 200ms;
-$reduc-delay: 20ms;
-
-@mixin reduc-delay {
-}
-
-.mboucle {
-    @for $i from 1 through 10 {
-        &#"{$i} { enlever le " après le "#" pour avoir un code fonctionnel
-            animation-delay: (
-                    $anim-delay +
-                        ($anim-delay - ($anim-delay - $reduc-delay * $i)) *
-                        $i
-                ) -
-                $i *
-                90;
-        }
-    }
-}
-
-test commit
-
-*/
-
 .m1 {
     opacity: 0;
     animation: appear 800ms forwards;

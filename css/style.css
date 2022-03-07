@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 html {
@@ -17,6 +16,28 @@ body {
   max-width: 1440px;
   width: 100%;
   margin: auto;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h2 {
+  margin-bottom: 0.15rem;
+}
+
+h3 {
+  margin: 0.6rem 0 0.3rem 0;
+}
+
+figure {
+  margin: 1rem;
 }
 
 .loading-spinner {
@@ -39,7 +60,7 @@ body {
   position: relative;
   bottom: 90px;
   right: 220px;
-  animation: orbit 2s ease-in-out forwards;
+  animation: orbit 2s 0.35s ease-in-out forwards;
 }
 
 .letter {
@@ -77,6 +98,7 @@ body {
   }
   100% {
     transform: rotate(0deg) translateY(0);
+    opacity: 1;
   }
 }
 .dot {
@@ -134,28 +156,6 @@ body {
     z-index: -1;
   }
 }
-header {
-  display: flex;
-  flex-direction: column;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-figure {
-  margin: 1rem;
-}
-
-h2 {
-  margin-bottom: 0.15rem;
-}
-
-h3 {
-  margin: 0.6rem 0 0.3rem 0;
-}
-
 html {
   font-family: Roboto, Arial, sans-serif;
 }
@@ -206,6 +206,12 @@ h1 {
   font-size: 1rem;
 }
 
+.page-title {
+  font-size: 1.4rem;
+  text-align: left;
+  margin-left: 1rem;
+}
+
 .restaurants {
   padding-top: 15px;
 }
@@ -236,25 +242,6 @@ h1 {
 }
 .index:hover i {
   color: #782cd3;
-}
-
-.page-title {
-  font-size: 1.4rem;
-  text-align: left;
-  margin-left: 1rem;
-}
-
-.footer__logo {
-  font-family: Shrikhand, Arial, sans-serif;
-  font-weight: 100;
-  font-size: 1.3rem;
-  margin-left: 1.5rem;
-  padding-top: 20px;
-}
-@media screen and (min-width: 768px) {
-  .footer__logo {
-    font-size: 1.6rem;
-  }
 }
 
 .btn {
@@ -317,13 +304,50 @@ h1 {
   }
 }
 
-.margin-bot {
-  margin-bottom: 30px;
+.icon_heart {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 2.25rem;
+  margin: 1.2rem 1.2rem 1.3rem 1rem;
+  color: black;
+  -webkit-background-clip: text;
+  z-index: 0;
+  position: relative;
+  top: 4px;
 }
-@media screen and (min-width: 1310px) {
-  .margin-bot {
-    margin-bottom: 40px;
+.icon_heart:hover i.fa-heart {
+  display: block;
+  transform: translateX(100%);
+}
+.icon_heart:hover i.fas.fa-heart {
+  display: block;
+  z-index: -1;
+}
+
+i.fas.fa-heart {
+  display: none;
+  background: linear-gradient(to bottom, #9356dc, #ff79da);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 2rem;
+  position: relative;
+  right: 44%;
+  top: 2px;
+  animation: fill 0.5s;
+}
+
+.couleur-remplissage {
+  animation: fill 0.2s;
+}
+
+@keyframes fill {
+  0% {
+    transform: translate(35px, 40px);
+    transform-origin: bottom;
   }
+}
+i.fa-heart:hover {
+  cursor: pointer;
 }
 
 .index {
@@ -546,6 +570,15 @@ h1 {
   opacity: 0;
   visibility: hidden;
   transition: opacity 5000ms, visibility 5000ms 500ms;
+}
+
+.margin-bot {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1310px) {
+  .margin-bot {
+    margin-bottom: 40px;
+  }
 }
 
 .green-line {
@@ -882,6 +915,24 @@ footer a {
   color: white;
 }
 
+.footer--up {
+  position: relative;
+  bottom: 30px;
+}
+
+.footer__logo {
+  font-family: Shrikhand, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 1.3rem;
+  margin-left: 1.5rem;
+  padding-top: 20px;
+}
+@media screen and (min-width: 768px) {
+  .footer__logo {
+    font-size: 1.6rem;
+  }
+}
+
 ul {
   list-style: none;
   padding-left: 1.5rem;
@@ -889,20 +940,15 @@ ul {
 ul li {
   margin-bottom: 5px;
 }
+ul a:hover {
+  color: #ff79da;
+}
 @media screen and (min-width: 768px) {
   ul {
     display: flex;
     justify-content: space-evenly;
     font-size: 1.1rem;
   }
-}
-ul a:hover {
-  color: #ff79da;
-}
-
-.footer--up {
-  position: relative;
-  bottom: 30px;
 }
 
 .menu {
@@ -929,32 +975,6 @@ ul a:hover {
   }
 }
 
-/*
-TENTATIVE DE CREER UNE BOUCLE POUR L'INCREMENTATION DU ANIMATION-DELAY
-
-$anim-delay: 200ms;
-$reduc-delay: 20ms;
-
-@mixin reduc-delay {
-}
-
-.mboucle {
-    @for $i from 1 through 10 {
-        &#"{$i} { enlever le " après le "#" pour avoir un code fonctionnel
-            animation-delay: (
-                    $anim-delay +
-                        ($anim-delay - ($anim-delay - $reduc-delay * $i)) *
-                        $i
-                ) -
-                $i *
-                90;
-        }
-    }
-}
-
-test commit
-
-*/
 .m1 {
   opacity: 0;
   animation: appear 800ms forwards;
@@ -1036,51 +1056,6 @@ test commit
     opacity: 1;
     transform: translateY(0);
   }
-}
-.icon_heart {
-  display: flex;
-  justify-content: flex-end;
-  font-size: 2.25rem;
-  margin: 1.2rem 1.2rem 1.3rem 1rem;
-  color: black;
-  -webkit-background-clip: text;
-  z-index: 0;
-  position: relative;
-  top: 4px;
-}
-.icon_heart:hover i.fa-heart {
-  display: block;
-  transform: translateX(100%);
-}
-.icon_heart:hover i.fas.fa-heart {
-  display: block;
-  z-index: -1;
-}
-
-i.fas.fa-heart {
-  display: none;
-  background: linear-gradient(to bottom, #9356dc, #ff79da);
-  -webkit-background-clip: text;
-  color: transparent;
-  font-size: 2rem;
-  position: relative;
-  right: 44%;
-  top: 2px;
-  animation: fill 0.5s;
-}
-
-.couleur-remplissage {
-  animation: fill 0.2s;
-}
-
-@keyframes fill {
-  0% {
-    transform: translate(35px, 40px);
-    transform-origin: bottom;
-  }
-}
-i.fa-heart:hover {
-  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -16,6 +16,28 @@ body {
     margin: auto;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h2 {
+    margin-bottom: 0.15rem;
+}
+
+h3 {
+    margin: 0.6rem 0 0.3rem 0;
+}
+
+figure {
+    margin: 1rem;
+}
+
 .loading-spinner {
     position: fixed;
     z-index: 1;
@@ -36,7 +58,7 @@ body {
     position: relative;
     bottom: 90px;
     right: 220px;
-    animation: orbit 2s ease-in-out forwards;
+    animation: orbit 2s 0.35s ease-in-out forwards;
 }
 
 .letter {
@@ -80,6 +102,7 @@ body {
 
     100% {
         transform: rotate(0deg) translateY(0);
+        opacity: 1;
     }
 }
 
@@ -146,26 +169,4 @@ body {
         opacity: 0;
         z-index: -1;
     }
-}
-
-header {
-    display: flex;
-    flex-direction: column;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-figure {
-    margin: 1rem;
-}
-
-h2 {
-    margin-bottom: 0.15rem;
-}
-
-h3 {
-    margin: 0.6rem 0 0.3rem 0;
 }

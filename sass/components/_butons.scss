@@ -54,10 +54,53 @@
     }
 }
 
-.margin-bot {
-    margin-bottom: 30px;
+.icon_heart {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 2.25rem;
+    margin: 1.2rem 1.2rem 1.3rem 1rem;
+    color: black;
+    -webkit-background-clip: text;
+    z-index: 0;
+    position: relative;
+    top: 4px;
 
-    @media screen and (min-width: 1310px) {
-        margin-bottom: 40px;
+    &:hover {
+        i.fa-heart {
+            display: block;
+            transform: translateX(100%);
+        }
+
+        i.fas.fa-heart {
+            display: block;
+            z-index: -1;
+        }
     }
+}
+
+i.fas.fa-heart {
+    display: none;
+    background: linear-gradient(to bottom, #9356dc, #ff79da);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 2rem;
+    position: relative;
+    right: 44%;
+    top: 2px;
+    animation: fill 0.5s;
+}
+
+.couleur-remplissage {
+    animation: fill 0.2s;
+}
+
+@keyframes fill {
+    0% {
+        transform: translate(35px, 40px);
+        transform-origin: bottom;
+    }
+}
+
+i.fa-heart:hover {
+    cursor: pointer;
 }

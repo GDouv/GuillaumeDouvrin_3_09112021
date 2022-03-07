@@ -202,3 +202,11 @@
         transition: opacity 5000ms, visibility 5000ms 500ms;
     }
 }
+
+.margin-bot {
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1310px) {
+        margin-bottom: 40px;
+    }
+}

@@ -7,6 +7,23 @@ footer {
     }
 }
 
+.footer--up {
+    position: relative;
+    bottom: 30px;
+}
+
+.footer__logo {
+    font-family: Shrikhand, Arial, sans-serif;
+    font-weight: 100;
+    font-size: 1.3rem;
+    margin-left: 1.5rem;
+    padding-top: 20px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 1.6rem;
+    }
+}
+
 ul {
     list-style: none;
     padding-left: 1.5rem;
@@ -15,18 +32,13 @@ ul {
         margin-bottom: 5px;
     }
 
+    a:hover {
+        color: $color-secondary;
+    }
+
     @media screen and (min-width: 768px) {
         display: flex;
         justify-content: space-evenly;
         font-size: 1.1rem;
     }
-
-    a:hover {
-        color: $color-secondary;
-    }
-}
-
-.footer--up {
-    position: relative;
-    bottom: 30px;
 }
