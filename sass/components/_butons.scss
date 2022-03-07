@@ -60,7 +60,6 @@
     font-size: 2.25rem;
     margin: 1.2rem 1.2rem 1.3rem 1rem;
     color: black;
-    -webkit-background-clip: text;
     z-index: 0;
     position: relative;
     top: 4px;
@@ -87,16 +86,12 @@ i.fas.fa-heart {
     position: relative;
     right: 44%;
     top: 2px;
-    animation: fill 0.5s;
-}
-
-.couleur-remplissage {
-    animation: fill 0.2s;
+    animation: fill 0.3s ease-out;
 }
 
 @keyframes fill {
     0% {
-        transform: translate(35px, 40px);
+        transform: translate(35px, 25px);
         transform-origin: bottom;
     }
 }
