@@ -155,7 +155,7 @@ figure {
       transform: rotate(-180deg) translateY(-500%);
     }
     82% {
-      transform: rotate(0deg) translateY(-300%);
+      transform: rotate(10deg) translateY(-300%);
     }
     100% {
       transform: rotate(0deg) translateY(0);
