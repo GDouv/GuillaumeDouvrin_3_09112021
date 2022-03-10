@@ -64,7 +64,7 @@ figure {
   border-radius: 50%;
   background: #000;
   margin: 0 15px;
-  animation: loader infinite 1.5s alternate;
+  animation: loader infinite 1.5s alternate ease-in-out;
 }
 
 .d2 {
