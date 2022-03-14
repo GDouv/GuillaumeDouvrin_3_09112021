@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GDouv/OC-Projet-3.git"
+    "url": "git+https://github.com/GDouv/GuillaumeDouvrin_3_09112021.git"
   },
   "author": "Guillaume Douvrin",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/GDouv/OC-Projet-3/issues"
+    "url": "https://github.com/GDouv/GuillaumeDouvrin_3_09112021/issues"
   },
-  "homepage": "https://github.com/GDouv/OC-Projet-3#readme"
+  "homepage": "https://github.com/GDouv/GuillaumeDouvrin_3_09112021#readme"
 }
